@@ -164,12 +164,12 @@ namespace ofxCv {
 		nextPts = features;
 		calcFeaturesNextFrame = false;
 	}
-	
+	/*
 	vector<ofPoint> FlowPyrLK::getFeatures(){
 		ofPolyline poly =toOf(prevPts);
 		return poly.getVertices();
 	}
-	
+	*/
 	vector<ofPoint> FlowPyrLK::getCurrent(){
 		vector<ofPoint> ret;
 		for(int i = 0; i < (int)nextPts.size(); i++) {

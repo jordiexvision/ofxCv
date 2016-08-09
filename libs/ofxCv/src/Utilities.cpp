@@ -26,12 +26,12 @@ namespace ofxCv {
 	cv::Rect toCv(ofRectangle rect) {
 		return cv::Rect(rect.x, rect.y, rect.width, rect.height);
 	}
-	
+	/*
 	Mat toCv(ofMesh& mesh) {
 		vector<ofVec3f>& vertices = mesh.getVertices();
 		return Mat(1, vertices.size(), CV_32FC3, &vertices[0]);
 	}
-	
+	*/
 	vector<cv::Point2f> toCv(const ofPolyline& polyline) {
 		// if polyline.getVertices() were const, this could wrap toCv(vec<vec2f>)
 		vector<cv::Point2f> contour(polyline.size());
